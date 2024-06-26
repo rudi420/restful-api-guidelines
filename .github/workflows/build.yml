@@ -19,15 +19,6 @@ jobs:
         run: |
           make check-rules > check-rule-ids.log
           make all
-
-      - name: Get Github Token
-        id: get-gh-token
-        if: ${{ github.ref == 'refs/heads/main' }}
-        uses: vadeg/github-app-token-action@v0.0.1
-        with:
-          app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
-          application_id: ${{ secrets.APP_ID }}
-
       - name: Deploy to GitHub Pages
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: peaceiris/actions-gh-pages@v3
