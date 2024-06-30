@@ -339,17 +339,21 @@
 :RFC-cacheable: pass:[<a href="https://tools.ietf.org/html/rfc9110#section-9.2.3">cacheable</a>]
 
 
-= Zalando RESTful API and Event Guidelines (prepare for KNISTR in progress...)
-link:https://github.com/zalando/restful-api-guidelines[GitHub Repository] as part of 
-link:https://opensource.zalando.com/[Zalando SE Opensource]
+= KNISTR RESTful API and Event Guidelines (work in progress...)
 
-image::assets/api-zalando-small.jpg[API Guild Logo]
+image:assets/KNISTR.png[] link:https://github.com/rudi420/restful-api-guidelines[GitHub Repository]
 
-image:assets/KNISTR.png[] KNISTR approval status is marked by the following icons in the headlines
+Thanks to the team of link:https://opensource.zalando.com/[Zalando SE Opensource] which created its API guideline and publish it to the Open Source community.
+KNISTR is now using this to create its guidelines with the KNISTR developer team specific adjustments and decisions. Initially each rule is prefixed with the KNISTR approval status as follows.
+
+KNISTR approval status is marked by the following icons in the headlines
 [horizontal]
 icon:question-circle[2x]:: Not decided yet
 icon:check-circle[2x]:: Validated and approved
 icon:minus-circle[2x]:: Validated and denied
+
+All unapproved rules icon:question-circle[2x] should be discussed and approved or rejected by the KNISTR development team.
+Approved rules are mandatory for the future API development.
 
 ifndef::ebook-format[]
 toc::[]
