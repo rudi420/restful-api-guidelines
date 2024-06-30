@@ -33,7 +33,7 @@ publish/subscribe broker for event producers and consumers.
 
 
 [#208]
-== {MUST} define events compliant with overall API guidelines
+== icon:question-circle[1x] {MUST} define events compliant with overall API guidelines
 
 Events must be consistent with other API data and the API Guidelines in
 general (as far as applicable).
@@ -60,7 +60,7 @@ The following existing guideline sections are applicable to events:
 
 
 [#194]
-== {MUST} treat events as part of the service interface
+== icon:question-circle[1x] {MUST} treat events as part of the service interface
 
 Events are part of a service’s interface to the outside world equivalent
 in standing to a service’s REST API. Services publishing data for
@@ -70,14 +70,14 @@ with the "API first" principle in mind as described in the <<introduction>>.
 
 
 [#195]
-== {MUST} make event schema available for review
+== icon:question-circle[1x] {MUST} make event schema available for review
 
 Services publishing event data for use by others must make the event
 schema as well as the event type definition available for review.
 
 
 [#197]
-== {MUST} specify and register events as event types
+== icon:question-circle[1x] {MUST} specify and register events as event types
 
 In Zalando's architecture, events are registered using a structure
 called an _Event Type_. The Event Type declares standard information as
@@ -261,7 +261,7 @@ stream (see <<204>>).
 
 
 [#213]
-== {MUST} follow naming convention for event type names
+== icon:question-circle[1x] {MUST} follow naming convention for event type names
 
 Event type names must (or should, see <<223>> for details and definition)
 conform to the functional naming depending on the <<219, audience>> as follows:
@@ -292,7 +292,7 @@ by a data change event and a RESTful API.
 
 
 [#207]
-== {MUST} indicate ownership of event types
+== icon:question-circle[1x] {MUST} indicate ownership of event types
 
 Event definitions must have clear ownership - this can be indicated via
 the `owning_application` field of the EventType.
@@ -305,7 +305,7 @@ of event.
 
 
 [#245]
-== {MUST} carefully define the compatibility mode
+== icon:question-circle[1x] {MUST} carefully define the compatibility mode
 
 Event type owners must pay attention to the choice of compatibility
 mode. The mode provides a means to evolve the schema. The range of
@@ -328,7 +328,7 @@ existing schema is allowed. Other changes are forbidden.
 
 
 [#196]
-== {MUST} ensure event schema conforms to OpenAPI schema object
+== icon:question-circle[1x] {MUST} ensure event schema conforms to OpenAPI schema object
 
 To align the event schema specifications to API specifications, we use
 the Schema Object as defined by the OpenAPI Specifications to define event
@@ -375,7 +375,7 @@ events.
 
 
 [#210]
-== {SHOULD} avoid `additionalProperties` in event type schemas
+== icon:question-circle[1x] {SHOULD} avoid `additionalProperties` in event type schemas
 
 Event type schema should avoid using `additionalProperties`
 declarations, in order to support schema evolution.
@@ -418,7 +418,7 @@ on the use of `additionalProperties`.
 
 
 [#246]
-== {MUST} use semantic versioning of event type schemas
+== icon:question-circle[1x] {MUST} use semantic versioning of event type schemas
 
 Event schemas must be versioned -- analog to <<116>> for REST API definitions.
 The compatibility mode interact with revision numbers in the schema
@@ -454,7 +454,7 @@ guidelines define two such categories:
 
 
 [#198]
-== {MUST} ensure that events conform to an event category
+== icon:question-circle[1x] {MUST} ensure that events conform to an event category
 
 A category describes a predefined structure (e.g. including event
 metadata as part of the event payload) that event publishers must
@@ -566,7 +566,7 @@ The following guidelines specifically apply to Data Change Events:
 === Event metadata
 
 [#247]
-== {MUST} provide mandatory event metadata
+== icon:question-circle[1x] {MUST} provide mandatory event metadata
 
 The General and Data Change event categories share a common structure for _metadata_
 representing generic event information. Parts of the metadata is provided by the
@@ -658,7 +658,7 @@ for additional information.
 
 
 [#211]
-== {MUST} provide unique event identifiers
+== icon:question-circle[1x] {MUST} provide unique event identifiers
 
 Event publishers must provide the `eid` (event identifier) as a standard 
 event object field and part of the event <<metadata,metadata>>. 
@@ -681,7 +681,7 @@ from the event fields as input (without random salt).
 
 
 [#201]
-== {MUST} use general events to signal steps in business processes
+== icon:question-circle[1x] {MUST} use general events to signal steps in business processes
 
 When publishing events that represent steps in a business process, event
 types *must* be based on the General Event category.
@@ -710,7 +710,7 @@ assessing each option and sticking to one for a given business process.
 
 
 [#203]
-== {SHOULD} provide explicit event ordering for general events
+== icon:question-circle[1x] {SHOULD} provide explicit event ordering for general events
 
 Event processing consumer applications need the order information to
 reconstruct the business event stream, for instance, in order to replay
@@ -752,7 +752,7 @@ requirements are low.
 
 
 [#202]
-== {MUST} use data change events to signal mutations
+== icon:question-circle[1x] {MUST} use data change events to signal mutations
 
 You *must* use data change events to signal changes of stored entity instances
 and facilitate e.g. change data capture (CDC). Event sourced change data capture
@@ -769,7 +769,7 @@ to the data analytics and AI platform as transactional source datasets.
 
 
 [#242]
-== {MUST} provide explicit event ordering for data change events
+== icon:question-circle[1x] {MUST} provide explicit event ordering for data change events
 
 While the order information is recommended for business events, it *must* be
 provided for data change events. The ordering information defines the (create,
@@ -786,7 +786,7 @@ ordering information may not be provided.
 
 
 [#204]
-== {SHOULD} use the hash partition strategy for data change events
+== icon:question-circle[1x] {SHOULD} use the hash partition strategy for data change events
 
 The `hash` partition strategy allows a producer to define which fields
 in an event are used as input to compute a logical partition the event
@@ -821,7 +821,7 @@ reason".
 = EVENT Design
 
 [#200]
-== {SHOULD} avoid writing sensitive data to events
+== icon:question-circle[1x] {SHOULD} avoid writing sensitive data to events
 
 Event data security is supported by Nakadi Event Bus mechanisms for access
 control and authorization of publishing or consuming events.  However, we avoid
@@ -831,7 +831,7 @@ access control and compliance and generally increases data protection risks.
 
 
 [#214]
-== {MUST} be robust against duplicates when consuming events
+== icon:question-circle[1x] {MUST} be robust against duplicates when consuming events
 
 Duplicate events are multiple occurrences of the same event object representing 
 the same (business or data change) event instance. 
@@ -870,7 +870,7 @@ rate (95th percentile) for high volume events.)
 
 
 [#212]
-== {SHOULD} design for idempotent out-of-order processing
+== icon:question-circle[1x] {SHOULD} design for idempotent out-of-order processing
 
 Events that are designed for <<149,idempotent>> out-of-order
 processing allow for extremely resilient systems: If processing an event
@@ -896,7 +896,7 @@ key to recreate a (partially) ordered sequence of events.
 
 
 [#199]
-== {MUST} ensure that events define useful business resources
+== icon:question-circle[1x] {MUST} ensure that events define useful business resources
 
 Events are intended to be used by other services including business
 process/data analytics and monitoring. They should be based around the
@@ -910,7 +910,7 @@ without a clear need.
 
 
 [#205]
-== {SHOULD} ensure that data change events match the APIs resources
+== icon:question-circle[1x] {SHOULD} ensure that data change events match the APIs resources
 
 A data change event's representation of an entity should correspond to
 the REST API representation.
@@ -939,7 +939,7 @@ stored as entity by the service.
 
 
 [#209]
-== {MUST} maintain backwards compatibility for events
+== icon:question-circle[1x] {MUST} maintain backwards compatibility for events
 
 Changes to events must be based around making additive and backward
 compatible changes. This follows the guideline, "Must: Don’t Break

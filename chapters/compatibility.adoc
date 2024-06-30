@@ -3,7 +3,7 @@
 
 
 [#106]
-== {MUST} not break backward compatibility
+== icon:question-circle[1x] {MUST} not break backward compatibility
 
 Change APIs, but keep all consumers running. Consumers usually have independent
 release lifecycles, focus on stability, and avoid changes that do not provide
@@ -38,7 +38,7 @@ expected that code changes are necessary.
 
 
 [#107]
-== {SHOULD} prefer compatible extensions
+== icon:question-circle[1x] {SHOULD} prefer compatible extensions
 
 API designers should apply the following rules to evolve RESTful APIs for
 services in a backward-compatible way:
@@ -62,7 +62,7 @@ services in a backward-compatible way:
 
 
 [#109]
-== {SHOULD} design APIs conservatively
+== icon:question-circle[1x] {SHOULD} design APIs conservatively
 
 Designers of service provider APIs should be conservative and accurate in what
 they accept from clients:
@@ -109,7 +109,7 @@ specific parameter.
 
 
 [#108]
-== {MUST} prepare clients to accept compatible API extensions
+== icon:question-circle[1x] {MUST} prepare clients to accept compatible API extensions
 
 Service clients should apply the robustness principle:
 
@@ -136,7 +136,7 @@ Service clients should apply the robustness principle:
 The <<handling-compatible-extensions>> section describes a best practice to implement the requirements in Java. 
 
 [#111]
-== {MUST} treat OpenAPI specification as open for extension by default
+== icon:question-circle[1x] {MUST} treat OpenAPI specification as open for extension by default
 
 The OpenAPI specification is not very specific on default extensibility
 of objects, and redefines JSON-Schema keywords related to extensibility, like
@@ -170,7 +170,7 @@ be appropriate in some circumstances, e.g. see <<216>>.
 
 
 [#113]
-== {SHOULD} avoid versioning
+== icon:question-circle[1x] {SHOULD} avoid versioning
 
 When changing your RESTful APIs, do so in a compatible way and avoid generating
 additional API versions. Multiple versions can significantly complicate
@@ -193,7 +193,7 @@ we strongly recommend to only use the first two approaches.
 
 
 [#114]
-== {MUST} use media type versioning
+== icon:question-circle[1x] {MUST} use media type versioning
 
 However, when API versioning is unavoidable, you have to design your
 multi-version RESTful APIs using media type versioning (see <<115>>).
@@ -263,7 +263,7 @@ approaches to handle breaking changes without being opinionated.
 
 
 [#115]
-== {MUST} not use URL versioning
+== icon:question-circle[1x] {MUST} not use URL versioning
 
 With URL versioning a (major) version number is included in the path, e.g.
 `/v1/customers`. The consumer has to wait until the provider has been released
@@ -276,7 +276,7 @@ with content negotiation.
 
 
 [#110]
-== {MUST} always return JSON objects as top-level data structures
+== icon:question-circle[1x] {MUST} always return JSON objects as top-level data structures
 
 In a response body, you must always return a JSON object (and not e.g. an
 array) as a top level data structure to support future extensibility. JSON
@@ -289,7 +289,7 @@ level data structures, since they don't support compatible, future extensions.
 
 
 [#112]
-== {SHOULD} used open-ended list of values (`x-extensible-enum`) for enumerations
+== icon:question-circle[1x] {SHOULD} used open-ended list of values (`x-extensible-enum`) for enumerations
 
 Enumerations are per definition closed sets of values that are assumed to be
 complete and not intended for extension. This closed principle of enumerations

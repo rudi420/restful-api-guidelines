@@ -3,7 +3,7 @@
 
 
 [#104]
-== {MUST} secure endpoints
+== icon:question-circle[1x] {MUST} secure endpoints
 
 Every API endpoint must be protected and armed with authentication and authorization.
 As part of the API definition you must specify how you protect your API using
@@ -51,7 +51,7 @@ because it exposes authentication server address details and may make use of red
 
 
 [#105]
-== {MUST} define and assign permissions (scopes)
+== icon:question-circle[1x] {MUST} define and assign permissions (scopes)
 
 Endpoints must be equipped with permissions, if they require client authorization for protection 
 since e.g. data is exposed that is classified as `orange` or `red` according to Zalando's 
@@ -86,7 +86,7 @@ it is required and so to say implicitly defined via the security section.
 
 
 [#225]
-== {MUST} follow the naming convention for permissions (scopes)
+== icon:question-circle[1x] {MUST} follow the naming convention for permissions (scopes)
 
 As long as the <<223,functional naming>> is not yet supported by our permission registry,
 permission names in APIs must conform to the following naming pattern:

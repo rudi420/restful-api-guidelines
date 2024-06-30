@@ -9,7 +9,7 @@ an idiomatic form across teams and services.
 
 
 [#167]
-== {MUST} use JSON as payload data interchange format
+== icon:question-circle[1x] {MUST} use JSON as payload data interchange format
 
 Use JSON ({RFC-7159}[RFC 7159]) to represent structured (resource) data passed
 with HTTP requests and responses as body payload. The JSON payload must use a
@@ -33,7 +33,7 @@ As a consequence, a JSON payload must
 
 
 [#252]
-== {SHOULD} design single resource schema for reading and writing
+== icon:question-circle[1x] {SHOULD} design single resource schema for reading and writing
 
 To simplify API specs and API maintenance, as well as the cognitive load of
 developers, endpoints should utilize a common model for reading and writing
@@ -53,7 +53,7 @@ to prevent client side surprises.
 
 
 [#250]
-== {SHOULD} be aware of services not fully supporting JSON/unicode
+== icon:question-circle[1x] {SHOULD} be aware of services not fully supporting JSON/unicode
 
 JSON payloads passed via API requests consist of valid unicode characters
 (see <<167>>). While `\uxxxx` are valid characters in a JSON strings, they can
@@ -75,7 +75,7 @@ tools.
 behavior and therefore should be described by the API specification.
 
 [#168]
-== {MAY} pass non-JSON media types using data specific standard formats
+== icon:question-circle[1x] {MAY} pass non-JSON media types using data specific standard formats
 
 Non-JSON media types may be supported, if you stick to a business object specific standard
 format for the payload data, for instance, image data format (JPG, PNG, GIF), document
@@ -87,7 +87,7 @@ for specific use cases where clients may not interpret the payload structure.
 
 
 [#172]
-== {SHOULD} use standard media types
+== icon:question-circle[1x] {SHOULD} use standard media types
 
 You should use standard media types (defined in {iana-media-types}[media type registry]
 of Internet Assigned Numbers Authority (IANA)) as `content-type` (or `accept`) header
@@ -103,14 +103,14 @@ standard media type for JSON, and make automated processing more difficult.
 
 
 [#120]
-== {SHOULD} pluralize array names
+== icon:question-circle[1x] {SHOULD} pluralize array names
 
 Names of arrays should be pluralized to indicate that they contain multiple values.
 This implies in turn that object names should be singular.
 
 
 [#118]
-== {MUST} property names must be snake_case (and never camelCase)
+== icon:question-circle[1x] {MUST} property names must be snake_case (and never camelCase)
 
 Property names are restricted to ASCII snake_case strings matching regex `^[a-z_][a-z_0-9]*$`.
 The first character must be a lower case letter, or an underscore, and subsequent
@@ -132,7 +132,7 @@ as if it came from the same hand.
 
 [#125]
 [#240]
-== {SHOULD} declare enum values using UPPER_SNAKE_CASE string
+== icon:question-circle[1x] {SHOULD} declare enum values using UPPER_SNAKE_CASE string
 
 Enumerations should be represented as `string` typed OpenAPI definitions of
 request parameters or model properties.
@@ -146,7 +146,7 @@ declaring possible values for a <<137,rule 137>> [`sort` parameter].
 
 
 [#235]
-== {SHOULD} name date/time properties with `_at` suffix
+== icon:question-circle[1x] {SHOULD} name date/time properties with `_at` suffix
 
 Dates and date-time properties should end with `_at` to distinguish them from
 boolean properties which otherwise would have very similar or even identical
@@ -164,7 +164,7 @@ guideline and are therefore still accepted for APIs that predate this rule.
 
 
 [#216]
-== {SHOULD} define maps using `additionalProperties`
+== icon:question-circle[1x] {SHOULD} define maps using `additionalProperties`
 
 A "map" here is a mapping from string keys to some other type. In JSON this is
 represented as an object, the key-value pairs being represented by property
@@ -215,7 +215,7 @@ An actual JSON object described by this might then look like this:
 
 
 [#123]
-== {MUST} use same semantics for `null` and absent properties
+== icon:question-circle[1x] {MUST} use same semantics for `null` and absent properties
 
 OpenAPI 3.x allows to mark properties as `required` and as `nullable` to
 specify whether properties may be absent (`{}`) or `null` (`{"example":null}`).
@@ -266,7 +266,7 @@ ignored, i.e. not modified.
 
 
 [#122]
-== {MUST} not use `null` for boolean properties
+== icon:question-circle[1x] {MUST} not use `null` for boolean properties
 
 Schema based JSON properties that are by design booleans must not be
 presented as nulls. A boolean is essentially a closed enumeration of two
@@ -277,13 +277,13 @@ YES, NO, UNDEFINED.
 
 
 [#124]
-== {SHOULD} not use `null` for empty arrays
+== icon:question-circle[1x] {SHOULD} not use `null` for empty arrays
 
 Empty array values can unambiguously be represented as the empty list, `[]`.
 
 
 [#174]
-== {MUST} use common field names and semantics
+== icon:question-circle[1x] {MUST} use common field names and semantics
 
 [[generic-fields]]
 You must use common field names and semantics whenever applicable.
@@ -347,7 +347,7 @@ tree_node:
 
 
 [#249]
-== {MUST} use the common address fields
+== icon:question-circle[1x] {MUST} use the common address fields
 
 [[address-fields]]
 Address structures play a role in different business and use-case
@@ -441,7 +441,7 @@ and address types when modeling users and their addresses).
 
 
 [#173]
-== {MUST} use the common money object
+== icon:question-circle[1x] {MUST} use the common money object
 
 Use the following common money structure:
 

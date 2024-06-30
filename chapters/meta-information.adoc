@@ -3,7 +3,7 @@
 
 
 [#218]
-== {MUST} contain API meta information
+== icon:question-circle[1x] {MUST} contain API meta information
 API specifications must contain the following OpenAPI meta information
 to allow for API management:
 
@@ -20,7 +20,7 @@ Following OpenAPI extension properties *must* be provided in addition:
 
 
 [#116]
-== {MUST} use semantic versioning
+== icon:question-circle[1x] {MUST} use semantic versioning
 
 OpenAPI allows to specify the API specification version in
 `#/info/version`. To share a common semantic of version information we
@@ -60,7 +60,7 @@ info:
 
 
 [#215]
-== {MUST} provide API identifiers
+== icon:question-circle[1x] {MUST} provide API identifiers
 
 Each API specification must be provisioned with a globally unique and
 immutable API identifier. The API identifier is defined in the `info`-block
@@ -108,7 +108,7 @@ info:
 
 
 [#219]
-== {MUST} provide API audience
+== icon:question-circle[1x] {MUST} provide API audience
 
 Each API must be classified with respect to the intended target *audience*
 supposed to consume the API, to facilitate differentiated standards on APIs
@@ -184,7 +184,7 @@ For details and more information on audience groups see the
 
 
 [#223]
-== {MUST-SHOULD-MAY} use functional naming schema
+== icon:question-circle[1x] {MUST-SHOULD-MAY} use functional naming schema
 
 Functional naming is a powerful, yet easy way to align global resources as
 _host_, _permission_, and _event names_ within an application landscape. It
@@ -234,7 +234,7 @@ managed in the registry.
 
 
 [#224]
-== {MUST} follow naming convention for hostnames
+== icon:question-circle[1x] {MUST} follow naming convention for hostnames
 
 Hostnames in APIs must, respectively should conform to the functional naming
 depending on the <<219, audience>> as follows (see <<223>> for details and

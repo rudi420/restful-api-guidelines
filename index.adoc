@@ -345,6 +345,12 @@ link:https://opensource.zalando.com/[Zalando SE Opensource]
 
 image::assets/api-zalando-small.jpg[API Guild Logo]
 
+image:assets/KNISTR.png[] KNISTR approval status is marked by the following icons in the headlines
+[horizontal]
+icon:question-circle[2x]:: Not decided yet
+icon:check-circle[2x]:: Validated and approved
+icon:minus-circle[2x]:: Validated and denied
+
 ifndef::ebook-format[]
 toc::[]
 endif::ebook-format[]

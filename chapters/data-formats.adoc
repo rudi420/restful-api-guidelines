@@ -3,7 +3,7 @@
 
 
 [#238]
-== {MUST} use standard data formats
+== icon:question-circle[1x] {MUST} use standard data formats
 
 https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#data-types[Open API]
 (based on https://tools.ietf.org/html/draft-bhutton-json-schema-validation-00#section-7.3[JSON Schema Validation vocabulary])
@@ -66,7 +66,7 @@ and everyone is encouraged to propose additions.
 
 
 [#171]
-== {MUST} define a format for number and integer types
+== icon:question-circle[1x] {MUST} define a format for number and integer types
 
 In <<238>> we added `bigint` and `decimal` to the OpenAPI defined formats.
 As an implication, you must always provide one of the formats `int32`, `int64`, `bigint`
@@ -81,7 +81,7 @@ type with `decimal` format will translate into `BigDecimal` and `integer` type w
 
 
 [#239]
-=== {MUST} encode binary data in `base64url`
+=== icon:question-circle[1x] {MUST} encode binary data in `base64url`
 
 You may expose binary data. You must use a standard media type and data format,
 if applicable -- see <<168, Rule 168>>. If no standard is available, you must define
@@ -91,7 +91,7 @@ encoding -- as also described in <<238>>.
 
 [#126]
 [#169]
-== {MUST} use standard formats for date and time properties
+== icon:question-circle[1x] {MUST} use standard formats for date and time properties
 
 As a specific case of <<238>>, you must use the `string` typed formats
 `date`, `date-time`, `time`, `duration`, or `period` for the definition of date and time properties.
@@ -125,7 +125,7 @@ more effort to parse, avoid this ambiguity.
 
 
 [#255]
-== {SHOULD} select appropriate one of date or date-time format
+== icon:question-circle[1x] {SHOULD} select appropriate one of date or date-time format
 
 When choosing between `date` and `datetime` formats you should take into account the following:
 
@@ -141,7 +141,7 @@ which avoids misinterpretations and eliminates the need of an additional context
 
 
 [#127]
-== {SHOULD} use standard formats for time duration and interval properties
+== icon:question-circle[1x] {SHOULD} use standard formats for time duration and interval properties
 
 Properties and that are by design durations and time intervals should be
 represented as strings formatted as defined by {ISO-8601}[ISO 8601]
@@ -177,7 +177,7 @@ properties providing a time interval should be named `<time-property>_interval`.
 
 [#128]
 [#170]
-== {MUST} use standard formats for country, language and currency properties
+== icon:question-circle[1x] {MUST} use standard formats for country, language and currency properties
 
 As a specific case of <<238>> you must use the following standard formats:
 
@@ -193,7 +193,7 @@ As a specific case of <<238>> you must use the following standard formats:
   via format `iso-4217` in the OpenAPI specification.
 
 [#244]
-== {SHOULD} use content negotiation, if clients may choose from different resource representations
+== icon:question-circle[1x] {SHOULD} use content negotiation, if clients may choose from different resource representations
 
 In some situations the API supports serving different representations of a
 specific resource (at the same URL), e.g. JSON, PDF, TEXT, or HTML
@@ -207,7 +207,7 @@ content format, or content encoding. You <<172>> like `application/json` or
 
 
 [#144]
-== {SHOULD} only use UUIDs if necessary
+== icon:question-circle[1x] {SHOULD} only use UUIDs if necessary
 
 Generating IDs can be a scaling problem in high frequency and near real time
 use cases. UUIDs solve this problem, as they can be generated without

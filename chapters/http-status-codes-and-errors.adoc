@@ -3,7 +3,7 @@
 
 
 [#243]
-== {MUST} use official HTTP status codes
+== icon:question-circle[1x] {MUST} use official HTTP status codes
 
 You must only use official HTTP status codes consistently with their intended
 semantics. Official HTTP status codes are defined via RFC standards and
@@ -21,7 +21,7 @@ web servers like Nginx, that we do not suggest to use).
 
 
 [#151]
-== {MUST} specify success and error responses
+== icon:question-circle[1x] {MUST} specify success and error responses
 
 APIs should define the functional, business view and abstract from
 implementation aspects. Success and error responses are a vital part to
@@ -63,7 +63,7 @@ responses:
 
 
 [#150]
-== {SHOULD} only use most common HTTP status codes
+== icon:question-circle[1x] {SHOULD} only use most common HTTP status codes
 
 The most commonly used codes are best understood and listed below as subset of
 the official HTTP status codes and consistent with their semantics in the RFCs.
@@ -83,24 +83,24 @@ a clear description of the HTTP status code in the response.
 A more specific version of the <<conventions-used-in-these-guidelines>>.
 
 [[status-code-use]]
-==== {use}
+==== icon:question-circle[1x] {use}
 A common, well understood status code that should be used where appropriate.
 Does NOT mean that every operation must be able to return this code.
 
 [[status-code-do-not-use]]
-==== {do-not-use}
+==== icon:question-circle[1x] {do-not-use}
 We do not see a good use-case for returning this status code from a RESTful
 API. The status code might be applicable in other contexts, e.g. returned by
 reverse proxies, for web pages, etc. Implicitly also means {do-not-document},
 as status codes that are not returned by the API should also not be documented.
 
 [[status-code-document]]
-==== {document}
+==== icon:question-circle[1x] {document}
 If the status code can be returned by the API, it should be documented in the
 API specification.
 
 [[status-code-do-not-document]]
-==== {do-not-document}
+==== icon:question-circle[1x] {do-not-document}
 The status code has a well-understood standard meaning to it, so only document
 it if there are operation specific details you want to add. See exception in
 <<151, rule 151>>.
@@ -444,14 +444,14 @@ code that serves no use case in RESTful APIs.
 
 
 [#220]
-== {MUST} use most specific HTTP status codes
+== icon:question-circle[1x] {MUST} use most specific HTTP status codes
 
 You must use the most specific HTTP status code when returning information
 about your request processing status or error situations.
 
 
 [#152]
-== {MUST} use code 207 for batch or bulk requests
+== icon:question-circle[1x] {MUST} use code 207 for batch or bulk requests
 
 Some APIs are required to provide either _batch_ or _bulk_ requests using
 {POST} for performance reasons, i.e. for communication and processing
@@ -520,7 +520,7 @@ response processing this distinction normally does not matter.
 
 
 [#153]
-== {MUST} use code 429 with headers for rate limits
+== icon:question-circle[1x] {MUST} use code 429 with headers for rate limits
 
 APIs that wish to manage the request rate of clients must use the {429} (Too
 Many Requests) response code, if the client exceeded the request rate (see
@@ -561,7 +561,7 @@ number of requests made within a given window for each named entity.
 
 
 [#176]
-== {MUST} support problem JSON
+== icon:question-circle[1x] {MUST} support problem JSON
 
 {RFC-9457}[RFC 9457] defines a Problem JSON object using the media type
 `application/problem+json` to provide an extensible human and machine readable
@@ -627,7 +627,7 @@ instead.
 
 
 [#177]
-== {MUST} not expose stack traces
+== icon:question-circle[1x] {MUST} not expose stack traces
 
 Stack traces contain implementation details that are not part of an API,
 and on which clients should never rely. Moreover, stack traces can leak
@@ -635,7 +635,7 @@ sensitive information that partners and third parties are not allowed to
 receive and may disclose insights about vulnerabilities to attackers.
 
 [#251]
-== {SHOULD} not use redirection codes
+== icon:question-circle[1x] {SHOULD} not use redirection codes
 
 We generally do not recommend using redirection codes for most API cases (except
 for {304}, which is not really a redirection code). Usually you would use the
