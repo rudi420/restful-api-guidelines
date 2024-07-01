@@ -53,7 +53,7 @@ possible to reference the second also from a `headers`-list.
 
 
 [#133]
-== {MAY} use standard headers
+== icon:question-circle[1x] {MAY} use standard headers
 
 APIs may make use of HTTP headers defined by non-obsolete RFCs (see following
 list of http://en.wikipedia.org/wiki/List_of_HTTP_header_fields[standard HTTP
@@ -62,7 +62,7 @@ specification.
 
 
 [#132]
-== {SHOULD} use kebab-case with uppercase separate words for HTTP headers
+== icon:question-circle[1x] {SHOULD} use kebab-case with uppercase separate words for HTTP headers
 
 This convention is followed by (most of) the standard headers e.g. as defined
 in {RFC-2616}[RFC 2616], {RFC-4229}[RFC 4229], {RFC-9110}[RFC 9110]. Examples:
@@ -83,7 +83,7 @@ abbreviations like `ID`.
 
 
 [#178]
-== {MUST} use `Content-*` headers correctly
+== icon:question-circle[1x] {MUST} use `Content-*` headers correctly
 
 Content or entity headers are headers with a `Content-` prefix. They describe
 the content of the body of the message and they can be used in both, HTTP
@@ -105,7 +105,7 @@ limited to:
 
 
 [#180]
-== {SHOULD} use `Location` header instead of `Content-Location` header
+== icon:question-circle[1x] {SHOULD} use `Location` header instead of `Content-Location` header
 
 As a correct usage of the {Content-Location} response header (see <<179>>)
 with respect to caching and its method specific semantics is difficult, we
@@ -119,7 +119,7 @@ Location], {RFC-9110}#section-8.7[RFC 9110 Section 8.2 Content-Location]
 
 
 [#179]
-== {MAY} use `Content-Location` header
+== icon:question-circle[1x] {MAY} use `Content-Location` header
 
 The {Content-Location} response header is an _optional_ header that can be used
 in successful write operations ({PUT}, {POST}, or {PATCH}) and read operations
@@ -157,7 +157,7 @@ See also <<227>>.
 
 
 [#181]
-== {MAY} consider to support `Prefer` header to handle processing preferences
+== icon:question-circle[1x] {MAY} consider to support `Prefer` header to handle processing preferences
 
 The {Prefer} header defined in {RFC-7240}[RFC 7240] allows clients to request
 processing behaviors from servers. It pre-defines a number of preferences and
@@ -182,7 +182,7 @@ Supporting APIs may return the {Preference-Applied} header also defined in
 
 
 [#182]
-== {MAY} consider to support `ETag` together with `If-Match`/`If-None-Match` header
+== icon:question-circle[1x] {MAY} consider to support `ETag` together with `If-Match`/`If-None-Match` header
 
 When creating or updating resources it may be necessary to expose conflicts
 and to prevent the _lost update_ or _initially created_ problem. Following
@@ -231,7 +231,7 @@ Please see <<optimistic-locking>> for a detailed discussion as well as
 
 
 [#230]
-== {MAY} consider to support `Idempotency-Key` header
+== icon:question-circle[1x] {MAY} consider to support `Idempotency-Key` header
 
 When creating or updating resources it can be helpful or necessary to ensure a
 strong <<idempotent>> behavior comprising same responses, to prevent duplicate
@@ -294,7 +294,7 @@ Zalando landscape specific proprietary headers.
 
 
 [#183]
-== {SHOULD} use only the specified proprietary Zalando headers
+== icon:question-circle[1x] {SHOULD} use only the specified proprietary Zalando headers
 
 As a general rule, proprietary HTTP headers should be avoided. In addition
 from a conceptual point of view, the business semantics and intent of an
@@ -399,7 +399,7 @@ API Linter (Zally) checking this rule.
 
 
 [#184]
-== {MUST} propagate proprietary headers
+== icon:question-circle[1x] {MUST} propagate proprietary headers
 
 All Zalando's proprietary headers defined in <<183>> are end-to-end headers
 footnote:header-types[HTTP/1.1 standard ({RFC-9110}#section-7.6.1[RFC 9110
@@ -422,7 +422,7 @@ information.
 
 
 [#233]
-== {MUST} support {X-Flow-ID}
+== icon:question-circle[1x] {MUST} support {X-Flow-ID}
 
 The {Flow-ID} is a generic parameter to be passed through service APIs and
 events and written into log files and traces. A consequent usage of the
