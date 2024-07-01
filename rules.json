@@ -2,591 +2,591 @@
   "rules": [
     {
       "id": "#100",
-      "title": "MUST follow API first principle"
+      "title": "== icon:question-circle[1x]MUST follow API first principle"
     },
     {
       "id": "#101",
-      "title": "MUST provide API specification using OpenAPI"
+      "title": "== icon:question-circle[1x]MUST provide API specification using OpenAPI"
     },
     {
       "id": "#102",
-      "title": "SHOULD provide API user manual"
+      "title": "== icon:question-circle[1x]SHOULD provide API user manual"
     },
     {
       "id": "#103",
-      "title": "MUST write APIs using U.S. English"
+      "title": "== icon:question-circle[1x]MUST write APIs using U.S. English"
     },
     {
       "id": "#104",
-      "title": "MUST secure endpoints"
+      "title": "== icon:question-circle[1x]MUST secure endpoints"
     },
     {
       "id": "#105",
-      "title": "MUST define and assign permissions (scopes)"
+      "title": "== icon:question-circle[1x]MUST define and assign permissions (scopes)"
     },
     {
       "id": "#106",
-      "title": "MUST not break backward compatibility"
+      "title": "== icon:question-circle[1x]MUST not break backward compatibility"
     },
     {
       "id": "#107",
-      "title": "SHOULD prefer compatible extensions"
+      "title": "== icon:question-circle[1x]SHOULD prefer compatible extensions"
     },
     {
       "id": "#108",
-      "title": "MUST prepare clients to accept compatible API extensions"
+      "title": "== icon:question-circle[1x]MUST prepare clients to accept compatible API extensions"
     },
     {
       "id": "#109",
-      "title": "SHOULD design APIs conservatively"
+      "title": "== icon:question-circle[1x]SHOULD design APIs conservatively"
     },
     {
       "id": "#110",
-      "title": "MUST always return JSON objects as top-level data structures"
+      "title": "== icon:question-circle[1x]MUST always return JSON objects as top-level data structures"
     },
     {
       "id": "#111",
-      "title": "MUST treat OpenAPI specification as open for extension by default"
+      "title": "== icon:question-circle[1x]MUST treat OpenAPI specification as open for extension by default"
     },
     {
       "id": "#112",
-      "title": "SHOULD used open-ended list of values (`x-extensible-enum`) for enumerations"
+      "title": "== icon:question-circle[1x]SHOULD used open-ended list of values (`x-extensible-enum`) for enumerations"
     },
     {
       "id": "#113",
-      "title": "SHOULD avoid versioning"
+      "title": "== icon:question-circle[1x]SHOULD avoid versioning"
     },
     {
       "id": "#114",
-      "title": "MUST use media type versioning"
+      "title": "== icon:question-circle[1x]MUST use media type versioning"
     },
     {
       "id": "#115",
-      "title": "MUST not use URL versioning"
+      "title": "== icon:question-circle[1x]MUST not use URL versioning"
     },
     {
       "id": "#116",
-      "title": "MUST use semantic versioning"
+      "title": "== icon:question-circle[1x]MUST use semantic versioning"
     },
     {
       "id": "#118",
-      "title": "MUST property names must be snake_case (and never camelCase)"
+      "title": "== icon:question-circle[1x]MUST property names must be snake_case (and never camelCase)"
     },
     {
       "id": "#120",
-      "title": "SHOULD pluralize array names"
+      "title": "== icon:question-circle[1x]SHOULD pluralize array names"
     },
     {
       "id": "#122",
-      "title": "MUST not use `null` for boolean properties"
+      "title": "== icon:question-circle[1x]MUST not use `null` for boolean properties"
     },
     {
       "id": "#123",
-      "title": "MUST use same semantics for `null` and absent properties"
+      "title": "== icon:question-circle[1x]MUST use same semantics for `null` and absent properties"
     },
     {
       "id": "#124",
-      "title": "SHOULD not use `null` for empty arrays"
+      "title": "== icon:question-circle[1x]SHOULD not use `null` for empty arrays"
     },
     {
       "id": "#125",
-      "title": "SHOULD declare enum values using UPPER_SNAKE_CASE string"
+      "title": "== icon:question-circle[1x]SHOULD declare enum values using UPPER_SNAKE_CASE string"
     },
     {
       "id": "#126",
-      "title": "MUST use standard formats for date and time properties"
+      "title": "== icon:question-circle[1x]MUST use standard formats for date and time properties"
     },
     {
       "id": "#127",
-      "title": "SHOULD use standard formats for time duration and interval properties"
+      "title": "== icon:question-circle[1x]SHOULD use standard formats for time duration and interval properties"
     },
     {
       "id": "#128",
-      "title": "MUST use standard formats for country, language and currency properties"
+      "title": "== icon:question-circle[1x]MUST use standard formats for country, language and currency properties"
     },
     {
       "id": "#129",
-      "title": "MUST use kebab-case for path segments"
+      "title": "== icon:question-circle[1x]MUST use kebab-case for path segments"
     },
     {
       "id": "#130",
-      "title": "MUST use snake_case (never camelCase) for query parameters"
+      "title": "== icon:question-circle[1x]MUST use snake_case (never camelCase) for query parameters"
     },
     {
       "id": "#132",
-      "title": "SHOULD use kebab-case with uppercase separate words for HTTP headers"
+      "title": "== icon:question-circle[1x]SHOULD use kebab-case with uppercase separate words for HTTP headers"
     },
     {
       "id": "#133",
-      "title": "MAY use standard headers"
+      "title": "== icon:question-circle[1x]MAY use standard headers"
     },
     {
       "id": "#134",
-      "title": "MUST pluralize resource names"
+      "title": "== icon:question-circle[1x]MUST pluralize resource names"
     },
     {
       "id": "#135",
-      "title": "SHOULD not use /api as base path"
+      "title": "== icon:question-circle[1x]SHOULD not use /api as base path"
     },
     {
       "id": "#136",
-      "title": "MUST use normalized paths without empty path segments and trailing slashes"
+      "title": "== icon:question-circle[1x]MUST use normalized paths without empty path segments and trailing slashes"
     },
     {
       "id": "#137",
-      "title": "MUST stick to conventional query parameters"
+      "title": "== icon:question-circle[1x]MUST stick to conventional query parameters"
     },
     {
       "id": "#138",
-      "title": "MUST avoid actions — think about resources"
+      "title": "== icon:question-circle[1x]MUST avoid actions — think about resources"
     },
     {
       "id": "#139",
-      "title": "SHOULD model complete business processes"
+      "title": "== icon:question-circle[1x]SHOULD model complete business processes"
     },
     {
       "id": "#140",
-      "title": "SHOULD define _useful_ resources"
+      "title": "== icon:question-circle[1x]SHOULD define _useful_ resources"
     },
     {
       "id": "#141",
-      "title": "MUST keep URLs verb-free"
+      "title": "== icon:question-circle[1x]MUST keep URLs verb-free"
     },
     {
       "id": "#142",
-      "title": "MUST use domain-specific resource names"
+      "title": "== icon:question-circle[1x]MUST use domain-specific resource names"
     },
     {
       "id": "#143",
-      "title": "MUST identify resources and sub-resources via path segments"
+      "title": "== icon:question-circle[1x]MUST identify resources and sub-resources via path segments"
     },
     {
       "id": "#144",
-      "title": "SHOULD only use UUIDs if necessary"
+      "title": "== icon:question-circle[1x]SHOULD only use UUIDs if necessary"
     },
     {
       "id": "#145",
-      "title": "MAY consider using (non-) nested URLs"
+      "title": "== icon:question-circle[1x]MAY consider using (non-) nested URLs"
     },
     {
       "id": "#146",
-      "title": "SHOULD limit number of resource types"
+      "title": "== icon:question-circle[1x]SHOULD limit number of resource types"
     },
     {
       "id": "#147",
-      "title": "SHOULD limit number of sub-resource levels"
+      "title": "== icon:question-circle[1x]SHOULD limit number of sub-resource levels"
     },
     {
       "id": "#148",
-      "title": "MUST use HTTP methods correctly"
+      "title": "== icon:question-circle[1x]MUST use HTTP methods correctly"
     },
     {
       "id": "#149",
-      "title": "MUST fulfill common method properties"
+      "title": "== icon:question-circle[1x]MUST fulfill common method properties"
     },
     {
       "id": "#150",
-      "title": "SHOULD only use most common HTTP status codes"
+      "title": "== icon:question-circle[1x]SHOULD only use most common HTTP status codes"
     },
     {
       "id": "#151",
-      "title": "MUST specify success and error responses"
+      "title": "== icon:question-circle[1x]MUST specify success and error responses"
     },
     {
       "id": "#152",
-      "title": "MUST use code 207 for batch or bulk requests"
+      "title": "== icon:question-circle[1x]MUST use code 207 for batch or bulk requests"
     },
     {
       "id": "#153",
-      "title": "MUST use code 429 with headers for rate limits"
+      "title": "== icon:question-circle[1x]MUST use code 429 with headers for rate limits"
     },
     {
       "id": "#154",
-      "title": "MUST define collection format of header and query parameters"
+      "title": "== icon:question-circle[1x]MUST define collection format of header and query parameters"
     },
     {
       "id": "#155",
-      "title": "SHOULD reduce bandwidth needs and improve responsiveness"
+      "title": "== icon:question-circle[1x]SHOULD reduce bandwidth needs and improve responsiveness"
     },
     {
       "id": "#156",
-      "title": "SHOULD use `gzip` compression"
+      "title": "== icon:question-circle[1x]SHOULD use `gzip` compression"
     },
     {
       "id": "#157",
-      "title": "SHOULD support partial responses via filtering"
+      "title": "== icon:question-circle[1x]SHOULD support partial responses via filtering"
     },
     {
       "id": "#158",
-      "title": "SHOULD allow optional embedding of sub-resources"
+      "title": "== icon:question-circle[1x]SHOULD allow optional embedding of sub-resources"
     },
     {
       "id": "#159",
-      "title": "MUST support pagination"
+      "title": "== icon:question-circle[1x]MUST support pagination"
     },
     {
       "id": "#160",
-      "title": "SHOULD prefer cursor-based pagination, avoid offset-based pagination"
+      "title": "== icon:question-circle[1x]SHOULD prefer cursor-based pagination, avoid offset-based pagination"
     },
     {
       "id": "#161",
-      "title": "SHOULD use pagination links"
+      "title": "== icon:question-circle[1x]SHOULD use pagination links"
     },
     {
       "id": "#162",
-      "title": "MUST use REST maturity level 2"
+      "title": "== icon:question-circle[1x]MUST use REST maturity level 2"
     },
     {
       "id": "#163",
-      "title": "MAY use REST maturity level 3 - HATEOAS"
+      "title": "== icon:question-circle[1x]MAY use REST maturity level 3 - HATEOAS"
     },
     {
       "id": "#164",
-      "title": "MUST use common hypertext controls"
+      "title": "== icon:question-circle[1x]MUST use common hypertext controls"
     },
     {
       "id": "#165",
-      "title": "SHOULD use simple hypertext controls for pagination and self-references"
+      "title": "== icon:question-circle[1x]SHOULD use simple hypertext controls for pagination and self-references"
     },
     {
       "id": "#166",
-      "title": "MUST not use link headers with JSON entities"
+      "title": "== icon:question-circle[1x]MUST not use link headers with JSON entities"
     },
     {
       "id": "#167",
-      "title": "MUST use JSON as payload data interchange format"
+      "title": "== icon:question-circle[1x]MUST use JSON as payload data interchange format"
     },
     {
       "id": "#168",
-      "title": "MAY pass non-JSON media types using data specific standard formats"
+      "title": "== icon:question-circle[1x]MAY pass non-JSON media types using data specific standard formats"
     },
     {
       "id": "#169",
-      "title": "MUST use standard formats for date and time properties"
+      "title": "== icon:question-circle[1x]MUST use standard formats for date and time properties"
     },
     {
       "id": "#170",
-      "title": "MUST use standard formats for country, language and currency properties"
+      "title": "== icon:question-circle[1x]MUST use standard formats for country, language and currency properties"
     },
     {
       "id": "#171",
-      "title": "MUST define a format for number and integer types"
+      "title": "== icon:question-circle[1x]MUST define a format for number and integer types"
     },
     {
       "id": "#172",
-      "title": "SHOULD use standard media types"
+      "title": "== icon:question-circle[1x]SHOULD use standard media types"
     },
     {
       "id": "#173",
-      "title": "MUST use the common money object"
+      "title": "== icon:question-circle[1x]MUST use the common money object"
     },
     {
       "id": "#174",
-      "title": "MUST use common field names and semantics"
+      "title": "== icon:question-circle[1x]MUST use common field names and semantics"
     },
     {
       "id": "#176",
-      "title": "MUST support problem JSON"
+      "title": "== icon:question-circle[1x]MUST support problem JSON"
     },
     {
       "id": "#177",
-      "title": "MUST not expose stack traces"
+      "title": "== icon:question-circle[1x]MUST not expose stack traces"
     },
     {
       "id": "#178",
-      "title": "MUST use `Content-*` headers correctly"
+      "title": "== icon:question-circle[1x]MUST use `Content-*` headers correctly"
     },
     {
       "id": "#179",
-      "title": "MAY use `Content-Location` header"
+      "title": "== icon:question-circle[1x]MAY use `Content-Location` header"
     },
     {
       "id": "#180",
-      "title": "SHOULD use `Location` header instead of `Content-Location` header"
+      "title": "== icon:question-circle[1x]SHOULD use `Location` header instead of `Content-Location` header"
     },
     {
       "id": "#181",
-      "title": "MAY consider to support `Prefer` header to handle processing preferences"
+      "title": "== icon:question-circle[1x]MAY consider to support `Prefer` header to handle processing preferences"
     },
     {
       "id": "#182",
-      "title": "MAY consider to support `ETag` together with `If-Match`/`If-None-Match` header"
+      "title": "== icon:question-circle[1x]MAY consider to support `ETag` together with `If-Match`/`If-None-Match` header"
     },
     {
       "id": "#183",
-      "title": "SHOULD use only the specified proprietary Zalando headers"
+      "title": "== icon:question-circle[1x]SHOULD use only the specified proprietary Zalando headers"
     },
     {
       "id": "#184",
-      "title": "MUST propagate proprietary headers"
+      "title": "== icon:question-circle[1x]MUST propagate proprietary headers"
     },
     {
       "id": "#185",
-      "title": "MUST obtain approval of clients before API shut down"
+      "title": "== icon:question-circle[1x]MUST obtain approval of clients before API shut down"
     },
     {
       "id": "#186",
-      "title": "MUST collect external partner consent on deprecation time span"
+      "title": "== icon:question-circle[1x]MUST collect external partner consent on deprecation time span"
     },
     {
       "id": "#187",
-      "title": "MUST reflect deprecation in API specifications"
+      "title": "== icon:question-circle[1x]MUST reflect deprecation in API specifications"
     },
     {
       "id": "#188",
-      "title": "MUST monitor usage of deprecated API scheduled for sunset"
+      "title": "== icon:question-circle[1x]MUST monitor usage of deprecated API scheduled for sunset"
     },
     {
       "id": "#189",
-      "title": "SHOULD add `Deprecation` and `Sunset` header to responses"
+      "title": "== icon:question-circle[1x]SHOULD add `Deprecation` and `Sunset` header to responses"
     },
     {
       "id": "#190",
-      "title": "SHOULD add monitoring for `Deprecation` and `Sunset` header"
+      "title": "== icon:question-circle[1x]SHOULD add monitoring for `Deprecation` and `Sunset` header"
     },
     {
       "id": "#191",
-      "title": "MUST not start using deprecated APIs"
+      "title": "== icon:question-circle[1x]MUST not start using deprecated APIs"
     },
     {
       "id": "#192",
-      "title": "MUST publish OpenAPI specification"
+      "title": "== icon:question-circle[1x]MUST publish OpenAPI specification"
     },
     {
       "id": "#193",
-      "title": "SHOULD monitor API usage"
+      "title": "== icon:question-circle[1x]SHOULD monitor API usage"
     },
     {
       "id": "#194",
-      "title": "MUST treat events as part of the service interface"
+      "title": "== icon:question-circle[1x]MUST treat events as part of the service interface"
     },
     {
       "id": "#195",
-      "title": "MUST make event schema available for review"
+      "title": "== icon:question-circle[1x]MUST make event schema available for review"
     },
     {
       "id": "#196",
-      "title": "MUST ensure event schema conforms to OpenAPI schema object"
+      "title": "== icon:question-circle[1x]MUST ensure event schema conforms to OpenAPI schema object"
     },
     {
       "id": "#197",
-      "title": "MUST specify and register events as event types"
+      "title": "== icon:question-circle[1x]MUST specify and register events as event types"
     },
     {
       "id": "#198",
-      "title": "MUST ensure that events conform to an event category"
+      "title": "== icon:question-circle[1x]MUST ensure that events conform to an event category"
     },
     {
       "id": "#199",
-      "title": "MUST ensure that events define useful business resources"
+      "title": "== icon:question-circle[1x]MUST ensure that events define useful business resources"
     },
     {
       "id": "#200",
-      "title": "SHOULD avoid writing sensitive data to events"
+      "title": "== icon:question-circle[1x]SHOULD avoid writing sensitive data to events"
     },
     {
       "id": "#201",
-      "title": "MUST use general events to signal steps in business processes"
+      "title": "== icon:question-circle[1x]MUST use general events to signal steps in business processes"
     },
     {
       "id": "#202",
-      "title": "MUST use data change events to signal mutations"
+      "title": "== icon:question-circle[1x]MUST use data change events to signal mutations"
     },
     {
       "id": "#203",
-      "title": "SHOULD provide explicit event ordering for general events"
+      "title": "== icon:question-circle[1x]SHOULD provide explicit event ordering for general events"
     },
     {
       "id": "#204",
-      "title": "SHOULD use the hash partition strategy for data change events"
+      "title": "== icon:question-circle[1x]SHOULD use the hash partition strategy for data change events"
     },
     {
       "id": "#205",
-      "title": "SHOULD ensure that data change events match the APIs resources"
+      "title": "== icon:question-circle[1x]SHOULD ensure that data change events match the APIs resources"
     },
     {
       "id": "#207",
-      "title": "MUST indicate ownership of event types"
+      "title": "== icon:question-circle[1x]MUST indicate ownership of event types"
     },
     {
       "id": "#208",
-      "title": "MUST define events compliant with overall API guidelines"
+      "title": "== icon:question-circle[1x]MUST define events compliant with overall API guidelines"
     },
     {
       "id": "#209",
-      "title": "MUST maintain backwards compatibility for events"
+      "title": "== icon:question-circle[1x]MUST maintain backwards compatibility for events"
     },
     {
       "id": "#210",
-      "title": "SHOULD avoid `additionalProperties` in event type schemas"
+      "title": "== icon:question-circle[1x]SHOULD avoid `additionalProperties` in event type schemas"
     },
     {
       "id": "#211",
-      "title": "MUST provide unique event identifiers"
+      "title": "== icon:question-circle[1x]MUST provide unique event identifiers"
     },
     {
       "id": "#212",
-      "title": "SHOULD design for idempotent out-of-order processing"
+      "title": "== icon:question-circle[1x]SHOULD design for idempotent out-of-order processing"
     },
     {
       "id": "#213",
-      "title": "MUST follow naming convention for event type names"
+      "title": "== icon:question-circle[1x]MUST follow naming convention for event type names"
     },
     {
       "id": "#214",
-      "title": "MUST be robust against duplicates when consuming events"
+      "title": "== icon:question-circle[1x]MUST be robust against duplicates when consuming events"
     },
     {
       "id": "#215",
-      "title": "MUST provide API identifiers"
+      "title": "== icon:question-circle[1x]MUST provide API identifiers"
     },
     {
       "id": "#216",
-      "title": "SHOULD define maps using `additionalProperties`"
+      "title": "== icon:question-circle[1x]SHOULD define maps using `additionalProperties`"
     },
     {
       "id": "#217",
-      "title": "MUST use full, absolute URI for resource identification"
+      "title": "== icon:question-circle[1x]MUST use full, absolute URI for resource identification"
     },
     {
       "id": "#218",
-      "title": "MUST contain API meta information"
+      "title": "== icon:question-circle[1x]MUST contain API meta information"
     },
     {
       "id": "#219",
-      "title": "MUST provide API audience"
+      "title": "== icon:question-circle[1x]MUST provide API audience"
     },
     {
       "id": "#220",
-      "title": "MUST use most specific HTTP status codes"
+      "title": "== icon:question-circle[1x]MUST use most specific HTTP status codes"
     },
     {
       "id": "#223",
-      "title": "MUST-SHOULD-MAY use functional naming schema"
+      "title": "== icon:question-circle[1x]MUST-SHOULD-MAY use functional naming schema"
     },
     {
       "id": "#224",
-      "title": "MUST follow naming convention for hostnames"
+      "title": "== icon:question-circle[1x]MUST follow naming convention for hostnames"
     },
     {
       "id": "#225",
-      "title": "MUST follow the naming convention for permissions (scopes)"
+      "title": "== icon:question-circle[1x]MUST follow the naming convention for permissions (scopes)"
     },
     {
       "id": "#226",
-      "title": "MUST document implicit response filtering"
+      "title": "== icon:question-circle[1x]MUST document implicit response filtering"
     },
     {
       "id": "#227",
-      "title": "MUST document cacheable `GET`, `HEAD`, and `POST` endpoints"
+      "title": "== icon:question-circle[1x]MUST document cacheable `GET`, `HEAD`, and `POST` endpoints"
     },
     {
       "id": "#228",
-      "title": "MUST use URL-friendly resource identifiers"
+      "title": "== icon:question-circle[1x]MUST use URL-friendly resource identifiers"
     },
     {
       "id": "#229",
-      "title": "SHOULD consider to design `POST` and `PATCH` idempotent"
+      "title": "== icon:question-circle[1x]SHOULD consider to design `POST` and `PATCH` idempotent"
     },
     {
       "id": "#230",
-      "title": "MAY consider to support `Idempotency-Key` header"
+      "title": "== icon:question-circle[1x]MAY consider to support `Idempotency-Key` header"
     },
     {
       "id": "#231",
-      "title": "Should use secondary key for idempotent `POST` design"
+      "title": "== icon:question-circle[1x]Should use secondary key for idempotent `POST` design"
     },
     {
       "id": "#233",
-      "title": "MUST supportX-Flow-ID"
+      "title": "== icon:question-circle[1x]MUST supportX-Flow-ID"
     },
     {
       "id": "#234",
-      "title": "MUST only use durable and immutable remote references"
+      "title": "== icon:question-circle[1x]MUST only use durable and immutable remote references"
     },
     {
       "id": "#235",
-      "title": "SHOULD name date/time properties with `_at` suffix"
+      "title": "== icon:question-circle[1x]SHOULD name date/time properties with `_at` suffix"
     },
     {
       "id": "#236",
-      "title": "SHOULD design simple query languages using query parameters"
+      "title": "== icon:question-circle[1x]SHOULD design simple query languages using query parameters"
     },
     {
       "id": "#237",
-      "title": "SHOULD design complex query languages using JSON"
+      "title": "== icon:question-circle[1x]SHOULD design complex query languages using JSON"
     },
     {
       "id": "#238",
-      "title": "MUST use standard data formats"
+      "title": "== icon:question-circle[1x]MUST use standard data formats"
     },
     {
       "id": "#239",
-      "title": "MUST encode binary data in `base64url`"
+      "title": "=== icon:question-circle[1x]MUST encode binary data in `base64url`"
     },
     {
       "id": "#240",
-      "title": "SHOULD declare enum values using UPPER_SNAKE_CASE string"
+      "title": "== icon:question-circle[1x]SHOULD declare enum values using UPPER_SNAKE_CASE string"
     },
     {
       "id": "#241",
-      "title": "MAY expose compound keys as resource identifiers"
+      "title": "== icon:question-circle[1x]MAY expose compound keys as resource identifiers"
     },
     {
       "id": "#242",
-      "title": "MUST provide explicit event ordering for data change events"
+      "title": "== icon:question-circle[1x]MUST provide explicit event ordering for data change events"
     },
     {
       "id": "#243",
-      "title": "MUST use official HTTP status codes"
+      "title": "== icon:question-circle[1x]MUST use official HTTP status codes"
     },
     {
       "id": "#244",
-      "title": "SHOULD use content negotiation, if clients may choose from different resource representations"
+      "title": "== icon:question-circle[1x]SHOULD use content negotiation, if clients may choose from different resource representations"
     },
     {
       "id": "#245",
-      "title": "MUST carefully define the compatibility mode"
+      "title": "== icon:question-circle[1x]MUST carefully define the compatibility mode"
     },
     {
       "id": "#246",
-      "title": "MUST use semantic versioning of event type schemas"
+      "title": "== icon:question-circle[1x]MUST use semantic versioning of event type schemas"
     },
     {
       "id": "#247",
-      "title": "MUST provide mandatory event metadata"
+      "title": "== icon:question-circle[1x]MUST provide mandatory event metadata"
     },
     {
       "id": "#248",
-      "title": "SHOULD use pagination response page object"
+      "title": "== icon:question-circle[1x]SHOULD use pagination response page object"
     },
     {
       "id": "#249",
-      "title": "MUST use the common address fields"
+      "title": "== icon:question-circle[1x]MUST use the common address fields"
     },
     {
       "id": "#250",
-      "title": "SHOULD be aware of services not fully supporting JSON/unicode"
+      "title": "== icon:question-circle[1x]SHOULD be aware of services not fully supporting JSON/unicode"
     },
     {
       "id": "#251",
-      "title": "SHOULD not use redirection codes"
+      "title": "== icon:question-circle[1x]SHOULD not use redirection codes"
     },
     {
       "id": "#252",
-      "title": "SHOULD design single resource schema for reading and writing"
+      "title": "== icon:question-circle[1x]SHOULD design single resource schema for reading and writing"
     },
     {
       "id": "#253",
-      "title": "MAY support asynchronous request processing"
+      "title": "== icon:question-circle[1x]MAY support asynchronous request processing"
     },
     {
       "id": "#254",
-      "title": "SHOULD avoid a total result count"
+      "title": "== icon:question-circle[1x]SHOULD avoid a total result count"
     },
     {
       "id": "#255",
-      "title": "SHOULD select appropriate one of date or date-time format"
+      "title": "== icon:question-circle[1x]SHOULD select appropriate one of date or date-time format"
     }
   ]
 }
